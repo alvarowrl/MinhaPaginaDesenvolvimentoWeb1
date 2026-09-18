@@ -1,0 +1,8 @@
+
+
+main img {
+    display: block;
+    margin: 15px auto;
+    border: 4px solid #ffb800;
+    border-radius: 30%;
+}

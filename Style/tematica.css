@@ -1,0 +1,19 @@
+
+main > div img {
+    display: block;
+    margin: 15px auto;
+    border: 3px solid #ffb800;
+    border-radius: 8px;
+}
+
+section img {
+    display: inline-block;
+    margin: 10px;
+    padding: 4px;
+    border: 3px solid #ffb800;
+    border-radius: 8px;
+}
+
+footer p {
+    font-style: italic;
+}

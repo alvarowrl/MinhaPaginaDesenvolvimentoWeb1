@@ -1,0 +1,93 @@
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f1ea;
+    color: #2b2b2b;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #16213e;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #ffffff;
+    margin: 10px 0 0 0;
+}
+
+nav a {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 8px;
+    padding: 6px 12px;
+    border: 2px solid #16213e;
+}
+
+/* :hover funcional no menu */
+nav a:hover {
+    background-color: #ffb800;
+    color: #16213e;
+    border: 2px solid #ffb800;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+
+section {
+    background-color: #ffffff;
+    border: 1px solid #ddd8c9;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+}
+
+section h2 {
+    color: #16213e;
+    border-bottom: 3px solid #ffb800;
+}
+
+footer {
+    background-color: #16213e;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: #ffb800;
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+.area-topo {
+    text-align: center;
+    margin: 15px 0;
+}
+
+#botaoTopo {
+    display: inline-block;
+    background-color: #ffb800;
+    color: #16213e;
+    padding: 8px 16px;
+    border: 2px solid #16213e;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+#botaoTopo:hover {
+    background-color: #16213e;
+    color: #ffb800;
+    border: 2px solid #ffb800;
+}

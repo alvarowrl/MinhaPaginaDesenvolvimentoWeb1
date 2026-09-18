@@ -1,0 +1,13 @@
+
+
+main div img {
+    display: block;
+    margin: 15px auto;
+    border: 3px solid #ffb800;
+    border-radius: 8px;
+}
+
+q {
+    font-style: italic;
+    color: #16213e;
+}
