@@ -19,11 +19,23 @@ header h1 {
     margin: 10px 0 0 0;
 }
 
+/* mobile first: menu vertical (um item embaixo do outro) */
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 nav a {
-    display: inline-block;
+    display: block;
+    text-align: center;
     color: #ffffff;
     text-decoration: none;
-    margin: 0 8px;
+    margin: 4px 0;
     padding: 6px 12px;
     border: 2px solid #16213e;
 }
@@ -90,4 +102,48 @@ footer a:hover {
     background-color: #16213e;
     color: #ffb800;
     border: 2px solid #ffb800;
+}
+
+/* colunas: no celular fica tudo empilhado (1 coluna) */
+.colunas {
+    display: flex;
+    flex-direction: column;
+}
+
+.colunas > div {
+    text-align: center;
+}
+
+/* ---------- Telas maiores: breakpoint 1 (menu) ---------- */
+@media (min-width: 600px) {
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        margin: 4px 8px;
+    }
+}
+
+/* ---------- Telas maiores: breakpoint 2 (colunas) ---------- */
+@media (min-width: 900px) {
+    main {
+        max-width: 1000px;
+    }
+
+    .colunas {
+        flex-direction: row;
+    }
+
+    .colunas > section,
+    .colunas > div {
+        flex: 1;
+    }
+
+    .colunas > section {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }

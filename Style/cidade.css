@@ -8,6 +8,7 @@ section img {
 }
 
 iframe {
+    max-width: 100%;
     display: block;
     margin: 15px auto;
     border: 2px solid #16213e;

@@ -1,0 +1,124 @@
+/* Página da chuteira - mobile first */
+
+/* no celular: conteúdo em cima e o preço embaixo */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    background-color: #16213e;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero h2 {
+    color: #ffb800;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #ffb800;
+    color: #16213e;
+    padding: 8px 16px;
+    border: 2px solid #16213e;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #16213e;
+    color: #ffb800;
+    border: 2px solid #ffb800;
+}
+
+/* só no celular */
+.resumo {
+    display: block;
+}
+
+/* só no computador (escondido no celular) */
+.sobre-completo {
+    display: none;
+}
+
+.depo-extra {
+    display: none;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    border: 2px solid #ffb800;
+    border-radius: 6px;
+    padding: 5px 10px;
+    margin: 5px 0;
+}
+
+.depoimento {
+    background-color: #f4f1ea;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+.caixa-preco {
+    background-color: #ffffff;
+    border: 3px solid #ffb800;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.antigo {
+    text-decoration: line-through;
+}
+
+.preco {
+    font-size: 36px;
+    font-weight: bold;
+    color: #16213e;
+}
+
+/* ---------- breakpoint do menu fica no geral.css (600px) ---------- */
+
+/* ---------- Computador: sidebar + conteúdo ---------- */
+@media (min-width: 900px) {
+    main {
+        flex-direction: row;
+    }
+
+    .conteudo {
+        flex: 3;
+    }
+
+    aside {
+        flex: 1;
+        margin-left: 20px;
+    }
+
+    /* troca: some o resumo, aparece o texto completo */
+    .resumo {
+        display: none;
+    }
+
+    .sobre-completo {
+        display: block;
+    }
+
+    .depo-extra {
+        display: block;
+    }
+
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 1;
+        margin: 5px;
+    }
+}
